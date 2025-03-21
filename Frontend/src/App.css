@@ -1,0 +1,150 @@
+  .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #962d91;
+    border-radius: 3px;
+    font-size: 16px;
+    float: right;
+    margin-bottom: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23962d91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    padding-right: 35px;
+  }
+  
+  /* Auto-suggestions styling */
+  .suggestions {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  .suggestions li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .suggestions li:hover {
+    background-color: #002147;
+    color: white;
+  }
+  
+  /* Selected topic styling */
+  .selected-topics {
+    clear: both;
+    margin-bottom: 20px;
+  }
+  
+  .selected-topics h4 {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  /* Pill-style button for selected topic */
+  .selected-topics:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  /* This is the blue topic selection box that appears when a topic is selected */
+  /* .topic-selection {
+    background-color: #002147;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    clear: both;
+  } */
+  
+  /* Review count display */
+  .review-count {
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .review-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .review-list li {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    border-left: 3px solid #002147;
+  }
+  
+  .review-list a {
+    display: block;
+    color: #002147;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  
+  .review-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .review-list p {
+    margin: 0;
+    color: #444;
+  }
+  
+  .load-more {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 15px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  
+  .load-more:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* The purple pill tag for the topic */
+  .topic-tag {
+    display: inline-block;
+    background-color: #962d91;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .topic-tag:after {
+    content: " ✕";
+  }
